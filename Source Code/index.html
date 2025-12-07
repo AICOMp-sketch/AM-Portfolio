@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Morgan | Creative Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Noise Overlay -->
+    <div class="noise"></div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="logo">AM.</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Section Indicators -->
+    <div class="section-indicators">
+        <div class="indicator active" data-section="0"></div>
+        <div class="indicator" data-section="1"></div>
+        <div class="indicator" data-section="2"></div>
+        <div class="indicator" data-section="3"></div>
+        <div class="indicator" data-section="4"></div>
+        <div class="indicator" data-section="5"></div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <span class="scroll-text">Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+
+    <!-- Horizontal Scroll Wrapper -->
+    <div class="horizontal-wrapper" id="horizontalWrapper">
+        
+        <!-- Hero Section -->
+        <section class="section hero" id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-label">
+                        <span class="dot"></span>
+                        Available for Freelance
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="line"><span>Creative</span></span>
+                        <span class="line"><span class="gradient">Developer</span></span>
+                        <span class="line"><span>& Designer</span></span>
+                    </h1>
+                    <p class="hero-description">
+                        I craft exceptional digital experiences that merge stunning visuals 
+                        with cutting-edge technology. Let's build something amazing together.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#work" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-inner">
+                            👨‍💻
+                        </div>
+                    </div>
+                    <div class="floating-card floating-card-1">
+                        <div class="card-icon">🎨</div>
+                        <div class="card-title">Design</div>
+                        <div class="card-value">UI/UX</div>
+                    </div>
+                    <div class="floating-card floating-card-2">
+                        <div class="card-icon">⚡</div>
+                        <div class="card-title">Experience</div>
+                        <div class="card-value">5+ Years</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-label">About Me</span>
+                    <h2 class="section-title">Passionate about creating digital excellence</h2>
+                    <p class="about-description">
+                        I'm a full-stack developer and designer with over 5 years of experience 
+                        creating beautiful, functional websites and applications. I believe in 
+                        the power of clean code, intuitive design, and meaningful user experiences.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">30+</div>
+                            <div class="stat-label">Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="bento-grid">
+                        <div class="bento-item">
+                            <div class="bento-icon">🚀</div>
+                            <div>
+                                <div class="bento-title">Fast</div>
+                                <div class="bento-text">Optimized for speed</div>
+                            </div>
+                        </div>
+                        <div class="bento-item bento-large">
+                            <div class="bento-icon">💡</div>
+                            <div>
+                                <div class="bento-title">Creative Solutions</div>
+                                <div class="bento-text">Innovative approaches to complex problems</div>
+                            </div>
+                        </div>
+                        <div class="bento-item bento-large">
+                            <div class="bento-icon">🎯</div>
+                            <div>
+                                <div class="bento-title">Goal Oriented</div>
+                                <div class="bento-text">Focused on delivering results that matter</div>
+                            </div>
+                        </div>
+                        <div class="bento-item">
+                            <div class="bento-icon">✨</div>
+                            <div>
+                                <div class="bento-title">Quality</div>
+                                <div class="bento-text">Pixel perfect work</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills" id="skills">
+            <div class="skills-content">
+                <span class="section-label">My Skills</span>
+                <h2 class="section-title">Technologies I work with</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <span class="skill-icon">⚛️</span>
+                        <h3 class="skill-name">React</h3>
+                        <p class="skill-level">Advanced</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">🟨</span>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <p class="skill-level">Expert</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="98"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">🎨</span>
+                        <h3 class="skill-name">CSS/SASS</h3>
+                        <p class="skill-level">Expert</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="96"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">🟢</span>
+                        <h3 class="skill-name">Node.js</h3>
+                        <p class="skill-level">Advanced</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">🔷</span>
+                        <h3 class="skill-name">TypeScript</h3>
+                        <p class="skill-level">Advanced</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">🐍</span>
+                        <h3 class="skill-name">Python</h3>
+                        <p class="skill-level">Intermediate</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">🎭</span>
+                        <h3 class="skill-name">Three.js</h3>
+                        <p class="skill-level">Advanced</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">📱</span>
+                        <h3 class="skill-name">React Native</h3>
+                        <p class="skill-level">Intermediate</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="78"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects" id="work">
+            <div class="projects-content">
+                <div class="projects-header">
+                    <span class="section-label">My Work</span>
+                    <h2 class="section-title">Selected Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Three.js</span>
+                                <span class="project-tag">GSAP</span>
+                            </div>
+                            <h3 class="project-title">NeoBank Dashboard</h3>
+                            <p class="project-description">A modern banking dashboard with 3D visualizations and real-time data.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #ec4899, #f43f5e);">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Next.js</span>
+                                <span class="project-tag">Tailwind</span>
+                                <span class="project-tag">Prisma</span>
+                            </div>
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <p class="project-description">Full-stack e-commerce solution with advanced filtering and checkout.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Vue.js</span>
+                                <span class="project-tag">D3.js</span>
+                                <span class="project-tag">Firebase</span>
+                            </div>
+                            <h3 class="project-title">Analytics Platform</h3>
+                            <p class="project-description">Real-time analytics dashboard with interactive charts and reports.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #f59e0b, #ea580c);">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">React Native</span>
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">MongoDB</span>
+                            </div>
+                            <h3 class="project-title">Fitness App</h3>
+                            <p class="project-description">Cross-platform mobile app for tracking workouts and nutrition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section experience" id="experience">
+            <div class="experience-content">
+                <div>
+                    <span class="section-label">Experience</span>
+                    <h2 class="section-title">My professional journey</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 - Present</div>
+                        <h3 class="timeline-title">Senior Frontend Developer</h3>
+                        <p class="timeline-company">Tech Innovation Labs</p>
+                        <p class="timeline-description">Leading the frontend team in developing cutting-edge web applications using React and Next.js.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2020 - 2022</div>
+                        <h3 class="timeline-title">Full Stack Developer</h3>
+                        <p class="timeline-company">Digital Solutions Inc.</p>
+                        <p class="timeline-description">Built and maintained multiple client projects using modern JavaScript frameworks and Node.js.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2018 - 2020</div>
+                        <h3 class="timeline-title">Junior Developer</h3>
+                        <p class="timeline-company">StartUp Hub</p>
+                        <p class="timeline-description">Started my professional career working on various web development projects and learning best practices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="contact-content">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="contact-title">Let's work <span>together</span></h2>
+                <p class="contact-text">
+                    Have a project in mind? I'd love to hear about it. 
+                    Let's create something amazing together.
+                </p>
+                <a href="mailto:hello@alexmorgan.dev" class="contact-email">hello@alexmorgan.dev</a>
+                <div class="social-links">
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">💼</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💻</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
